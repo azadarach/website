@@ -73,7 +73,7 @@ h2{
     margin-left: 150px;
     margin-right: 150px;
     text-align: center;
-    font-size: 35px;
+    font-size: 37px;
 }
 
 h3{
@@ -98,6 +98,14 @@ p2{
     margin-top: 200px;
     padding-bottom: 100px;
     float: right;
+}
+
+p3 {
+    color: white;
+    font-family: Higuen;
+    font-size: 40px;
+    padding: 50px;
+
 }
 
 .pad {
@@ -170,6 +178,9 @@ section{
 /* IMAGE flicker-in-1 animation */
 @keyframes flicker-in-1{0%{opacity:0}10%{opacity:0}10.1%{opacity:1}10.2%{opacity:0}20%{opacity:0}20.1%{opacity:1}20.6%{opacity:0}30%{opacity:0}30.1%{opacity:1}30.5%{opacity:1}30.6%{opacity:0}45%{opacity:0}45.1%{opacity:1}50%{opacity:1}55%{opacity:1}55.1%{opacity:0}57%{opacity:0}57.1%{opacity:1}60%{opacity:1}60.1%{opacity:0}65%{opacity:0}65.1%{opacity:1}75%{opacity:1}75.1%{opacity:0}77%{opacity:0}77.1%{opacity:1}85%{opacity:1}85.1%{opacity:0}86%{opacity:0}86.1%{opacity:1}100%{opacity:1}}
 
+/* IMAGE flicker-2 animation */
+@keyframes flicker-2{0%{opacity:0}11%{opacity:0}10.1%{opacity:1}10.2%{opacity:0}20%{opacity:0}20.1%{opacity:1}20.6%{opacity:0}30%{opacity:0}30.1%{opacity:1}30.5%{opacity:1}30.6%{opacity:0}45%{opacity:0}45.1%{opacity:1}50%{opacity:1}55%{opacity:1}55.1%{opacity:0}57%{opacity:0}57.1%{opacity:1}60%{opacity:1}60.1%{opacity:0}65%{opacity:0}65.1%{opacity:1}75%{opacity:1}75.1%{opacity:0}77%{opacity:0}77.1%{opacity:1}85%{opacity:1}85.1%{opacity:0}86%{opacity:0}86.1%{opacity:1}100%{opacity:1}}
+
 /* IMAGE wipe-enter animation */
 @keyframes wipe-enter {0% {transform: scale(0, .025);} 50% {transform: scale(1, .025);}}
 
@@ -184,16 +195,6 @@ section{
 @media (prefers-reduced-motion: no-preference) {
     .square-animation {
       animation: tilt-in-fwd 1s 1;
-    }
-  }
-
-.years {
-    background: black;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .years-animation {
-      animation: flicker-in-1 2s 1;
     }
   }
 
@@ -244,3 +245,21 @@ section{
     padding-left: 40px;
     padding-right: 300px;
 }
+
+.text4 {
+    padding-left: 40px;
+    padding-right: 600px;
+}
+
+.text5 {
+    padding-left: 180px;
+    padding-right: 300px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .item {
+      animation-name: flicker-2;
+      animation-duration: 2s;
+      animation-iteration-count: 1;
+    }
+  }

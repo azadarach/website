@@ -69,38 +69,3 @@ observer3.observe(document.querySelector('.photo-wrapper-3'));
 });
   
 observer4.observe(document.querySelectorAll('.image-wrapper'));
-
-// Interaction Observer 5 (not working)
-
-const observer5 = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      const years = entry.target.querySelector('.years');
-  
-      if (entry.isIntersecting) {
-        years.classList.add('years-animation');
-        return; // if we added the class, exit the function
-      }
-  
-      // We're not intersecting, so remove the class!
-      years.classList.remove('years-animation');
-    });
-  });
-  
-  observer5.observe(document.querySelector('.years-wrapper'));
-  
-  // Intersection Observer 6 (not working)
-
-const observer6 = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-    console.log(entry)
-    if (entry.isIntersecting) {
-        entry.target.classList.add('show2');
-        } else {
-            entry.target.classList.remove('show2');
-        }
-
-    });
-});
-
-const hidden2Elements = document.querySelectorAll('.hidden2');
-hidden2Elements.forEach((el) => observer6.observe(el));
